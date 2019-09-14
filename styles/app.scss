@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border: .5px solid lightgrey;
+
+    .data p {
+        margin: 10px;
+    }
+
+    .data span {
+        font-weight: 600;
+    }
+  }
+    
+  .buttons-wrapper button {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgrey;
+    margin: 0 5px;
+    padding: 10px 40px;
+  }
+
+  button:hover {
+      cursor: pointer;
+  }
+  
+  .buttons-wrapper.buttons-selected-first {
+      button:first-child {
+          background: lightgrey;
+          color: white;
+      }
+  }
+
+  .buttons-wrapper.buttons-selected-second {
+    button:nth-child(2) {
+        background: lightgrey;
+        color: white;
+    }
+}
+
+
+  .poligonShape {
+    fill:transparent;
+    stroke:purple;
+    stroke-width:1;
+    stroke-dasharray: 2;
+  }
+
+  .circleArea {
+    stroke:black;
+    stroke-width:3;
+    stroke-dasharray: 1;
+    fill: transparent;
+  }
